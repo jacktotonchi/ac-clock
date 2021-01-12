@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Crossing Clock</title>
+    <meta name="title" content="Animal Crossing Clock">
+    <meta name="description" content="An open-source clock that plays Animal Crossing music, by Sam Carson.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samcarsonx.github.io/ac-clock/">
+    <meta property="og:title" content="Animal Crossing Clock">
+    <meta property="og:description" content="An open-source clock that plays Animal Crossing music, by Sam Carson.">
+
+    <meta property="twitter:url" content="https://samcarsonx.github.io/ac-clock/">
+    <meta property="twitter:title" content="Animal Crossing Clock">
+    <meta property="twitter:description" content="An open-source clock that plays Animal Crossing music, by Sam Carson.">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" charset="UTF-8" src="script.js"></script>
+
+    <script>
+        document.write('<style>body { visibility: hidden; }</style>');
+        $(window).on("load", function () {
+            $("body").css("visibility", "visible");
+            refreshHour();
+        });
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <span class="title finkfont">Animal Crossing Clock</span>
+        <span style="color: #6e661b;">
+            An <a class="titlelink" href="https://github.com/samcarsonx/ac-clock">open-source</a>
+            clock that plays Animal Crossing music, by <a class="titlelink" href="https://github.com/samcarsonx">Sam Carson</a>.
+        </span>
+
+        <div class="jumbotron">
+            <div class="iframe-container">
+                <iframe class="responsive-iframe" id="videoFrame" width="640" height="384" src="" frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; modestbranding;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="jumbotron" style="background-color: #7b6c53; color: white;">
+            <div class="row">
+                <div class="col">
+                    <h2 class="finkfont">About</h2>
+                    <p>
+                        This is a small <a class="about"
+                            href="https://github.com/samcarsonx/ac-clock">open-source</a> web applet
+                        I made that plays music from Animal Crossing, based upon real-time hours.
+                        You should check out the original, <a class="about" href="https://crossingti.me">Crossing Time</a>,
+                        which this took heavy inspiration from. This was made for the sake of learning new programming skills.
+                    </p>
+                    <br>
+                    <h2 class="finkfont">The Creator</h2>
+                    <p class="en">
+                        I'm Sam and I enjoy programming.
+                        Check out my <a class="about" href="https://samcarson.xyz">website</a>
+                        or <a class="about" href="https://github.com/samcarsonx">GitHub page</a>!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
