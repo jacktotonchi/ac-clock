@@ -30,14 +30,6 @@
 
     <script type="text/javascript" charset="UTF-8" src="script.js"></script>
 
-    <script>
-        document.write('<style>body { visibility: hidden; }</style>');
-        $(window).on("load", function () {
-            $("body").css("visibility", "visible");
-            refreshHour();
-        });
-    </script>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -57,9 +49,20 @@
         <div class="jumbotron">
             <div class="iframe-container">
                 <iframe class="responsive-iframe" id="videoFrame" width="640" height="384" src="" frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; modestbranding;"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                     allowfullscreen>
                 </iframe>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <select id="game" class="form-control btn-light" style="border-radius: 15px;">
+                        <option value="GameCube">GameCube</option>
+                        <option value="CityFolk">City Folk</option>
+                        <option value="NewLeaf">New Leaf</option>
+                        <option value="NewHorizons">New Horizons</option>
+                    </select>
+                </div>
             </div>
         </div>
 
